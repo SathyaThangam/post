@@ -1,0 +1,132 @@
+.headertag
+{
+    background-color: greenyellow;
+    /* background-color: white; */
+    height: 100px;
+    margin-left: 0%;
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(152, 152, 233);
+   
+}
+
+.postdisplay
+{
+    /* background-color: aqua; */
+     margin-inline-start: 180px;
+     margin-inline-end: 175px;
+     font-size: 20px;
+}
+
+.logotag
+{
+    height: 98px;
+    width: 80px;
+    margin-left: 0%;
+    border-style: outset;
+    border-width: 2px;
+    border-color: rgb(152, 152, 233);
+    
+}
+
+
+
+.buttontag
+{
+    border-color: blue;
+    margin-right: 0%;
+    margin-left: 550px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: 2px solid black;
+    background-color: rgb(152, 152, 233);
+}
+
+ 
+
+.liketag
+{
+
+    border-color: blue;
+    margin-left: 170px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: 2px solid black;
+    background-color: rgb(152, 152, 233);
+}
+
+.deletebutton
+{
+
+    border-color: blue;
+    margin-left: 35px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: 2px solid black;
+    background-color: rgb(152, 152, 233);
+}
+
+
+.likebutton
+{
+
+    border-color: blue;
+    margin-left: 530px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: 2px solid black;
+    background-color: rgb(152, 152, 233);
+}
+
+.postlabel
+{
+    margin-top: 80px;
+    font-size: 20px;
+    margin-left: 170px;
+}
+
+.commentlabel
+{
+    
+    font-size: 20px;
+
+}
+
+.commentbox
+{
+    width: 800px;
+    height: 80px;
+    border-radius: 5px;
+    border-color: blue;
+    word-break: normal;
+}
+
+.commentsection
+{
+    margin-left: 170px;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    border-color: blue;
+}
+
+.texttag
+{
+    width: 800px;
+    height: 80px;
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-left: 170px;
+    border-color: blue;
+
+}
+
+.comments
+{
+    /* background-color: aqua; */
+    width: 750px;
+}

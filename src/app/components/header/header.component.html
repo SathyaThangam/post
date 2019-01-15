@@ -1,0 +1,64 @@
+  
+ 
+<nav class="headertag" >
+    <img src = './assets/group.jpg' alt="logo" class = "logotag">  
+ 
+ </nav>
+
+
+ <div class="container" >
+   
+      <form>
+        <div class="form-group" >
+          <p class="postlabel"> <strong> Post your views here.....  </strong></p>
+          <textarea  ng-model="myTextarea" class = "texttag" name = "post" [(ngModel)] = "post" maxlength="300" id = "post" required> {{post}}</textarea>
+          
+        </div>
+         
+        <button  class = "liketag" (click) = "toggleLike()">{{like ? "Liked" : "Like"}}</button>
+        <button class = "buttontag" (click) = "toggleComments()"> {{showcomments ? "Hide Comment" : "Add Comment"}} </button> 
+        <br> <br>
+        <hr>
+
+
+         <div class="postdisplay">
+            {{post}}
+         </div> 
+         
+         
+         
+        <div  *ngIf = "showcomments" class="commentsection">
+
+            
+          <form (submit) = "addComment(comment.value)">
+                <hr>
+                <input class = "commentbox" maxLength= "300" type = "text" #comment>             
+                
+          </form>
+ 
+          <p class="commentlabel"> <strong> Comments </strong></p>
+          <ul>
+             <li *ngFor = "let comment  of comments; let i =index">
+                 
+                 <div class = "comments">
+                    <h5> {{comment}} </h5>  <br>
+                 </div>
+                 
+                 <button  class = "likebutton" (click) = "toggleLikes(i)"   >{{likesArray[i] ? "Liked" : "Like"}}</button>
+                 <button  class = "deletebutton" (click) = "deleteComment(i)"> Delete</button>
+                 <hr>
+             </li>
+    
+          </ul>
+ 
+
+        </div>
+  
+      </form>
+
+       
+  </div>
+  
+  
+ 
+ <router-outlet></router-outlet>
